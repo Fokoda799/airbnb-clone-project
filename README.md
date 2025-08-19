@@ -1,6 +1,6 @@
-# 🏠 **Airbnb Clone Backend**
+# **🏠 Airbnb Clone Backend**
 
-## 📖 Overview
+## **📖 Overview**
 
 The **Airbnb Clone Backend** provides a **robust and scalable foundation** to power core features of Airbnb, including:  
 
@@ -29,7 +29,7 @@ Built with modern tools for reliability and scalability:
 - ⚙️ **DevOps Engineer** – Ensures smooth deployment, scaling, and monitoring.  
 - 🧪 **QA Engineer** – Tests features and maintains system quality.
 
-## ⚙️ Technology Stack  
+## **⚙️ Technology Stack**
 
 This project uses a modern stack to ensure scalability, performance, and reliability:  
 
@@ -42,7 +42,7 @@ This project uses a modern stack to ensure scalability, performance, and reliabi
 - 🐳 **Docker** – Provides containerization for consistent development and deployment environments.  
 - 🤖 **GitHub Actions (CI/CD)** – Automates testing and deployment pipelines to ensure smooth integration and delivery.  
 
-## 🗄️ Database Design  
+## **🗄️ Database Design**
 
 The backend uses a relational database (PostgreSQL) to manage key entities and their relationships:  
 
@@ -131,7 +131,7 @@ The backend uses a relational database (PostgreSQL) to manage key entities and t
 - A payment **belongs to one booking** 📅  
 - Each booking can have **one or multiple payments** 💳  
 
-## ✨ Feature Breakdown  
+## **✨ Feature Breakdown**
 
 ### 👥 User Management
 
@@ -163,7 +163,7 @@ This builds trust within the platform, helps guests make informed decisions, and
 Uses **indexing and caching strategies** to improve data retrieval and overall system performance.  
 It ensures the backend can efficiently handle high-traffic scenarios and deliver a smooth user experience.
 
-## 🔒 API Security  
+## **🔒 API Security**
 
 Security is a top priority for the Airbnb Clone Backend to **protect user data, payments, and overall platform integrity**. The following measures are implemented:  
 
@@ -190,12 +190,31 @@ Limits the number of API requests per user or IP address.
 
 ### 🔐 Data Protection & Encryption
 
-Sensitive data (passwords, payment details) is **encrypted in storage and in transit**.  
+Sensitive data (passwords, payment details) is **encrypted in storage and in transit**.
+
 - Prevents unauthorized access to user accounts and payment information.  
 - Ensures secure communication between clients and the backend.  
 
 ### 🧪 Security Testing
 
-Regular testing for **vulnerabilities and potential threats**.  
+Regular testing for **vulnerabilities and potential threats**.
+
 - Identifies and fixes security loopholes before they affect users.  
-- Maintains trust and reliability of the platform.  
+- Maintains trust and reliability of the platform.
+
+## **🤖 CI/CD Pipeline**
+
+A **CI/CD (Continuous Integration / Continuous Deployment) pipeline** automates the process of **building, testing, and deploying code**.  
+This ensures that new features, bug fixes, and updates are delivered quickly and reliably, with minimal human error.  
+
+### Why It’s Important
+
+- ⚡ **Faster Development**: Changes are automatically tested and deployed.  
+- 🛡️ **Higher Quality**: Automated tests catch bugs before they reach production.  
+- 📦 **Consistency**: Ensures the backend behaves the same across development, staging, and production environments.  
+
+### Tools Used
+
+- 🐳 **Docker** – Containerization for consistent development and deployment environments.  
+- 🤖 **GitHub Actions** – Automates building, testing, and deployment pipelines.  
+- 🐍 **Django & DRF** – Integrated with pipelines for automatic testing of APIs.
