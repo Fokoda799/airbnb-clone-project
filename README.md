@@ -161,4 +161,41 @@ This builds trust within the platform, helps guests make informed decisions, and
 ### ⚡ Data Optimization
 
 Uses **indexing and caching strategies** to improve data retrieval and overall system performance.  
-It ensures the backend can efficiently handle high-traffic scenarios and deliver a smooth user experience.  
+It ensures the backend can efficiently handle high-traffic scenarios and deliver a smooth user experience.
+
+## 🔒 API Security  
+
+Security is a top priority for the Airbnb Clone Backend to **protect user data, payments, and overall platform integrity**. The following measures are implemented:  
+
+### 👤 Authentication
+
+Users must **log in with a secure account** to access the platform.
+
+- Protects sensitive user information (passwords, profiles).  
+- Ensures that only verified users can perform actions like bookings or property management.  
+
+### 🛡️ Authorization
+
+Different roles (guest, host, admin) have **controlled access to resources**.
+
+- Prevents users from accessing or modifying data they shouldn’t.  
+- Ensures hosts can manage their own properties while guests only access bookings and reviews.  
+
+### ⚡ Rate Limiting & Throttling
+
+Limits the number of API requests per user or IP address.
+
+- Protects the platform from **DDoS attacks** and abuse.  
+- Ensures fair usage and maintains server performance for all users.  
+
+### 🔐 Data Protection & Encryption
+
+Sensitive data (passwords, payment details) is **encrypted in storage and in transit**.  
+- Prevents unauthorized access to user accounts and payment information.  
+- Ensures secure communication between clients and the backend.  
+
+### 🧪 Security Testing
+
+Regular testing for **vulnerabilities and potential threats**.  
+- Identifies and fixes security loopholes before they affect users.  
+- Maintains trust and reliability of the platform.  
