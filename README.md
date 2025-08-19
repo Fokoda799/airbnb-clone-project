@@ -1,6 +1,6 @@
-# 🏠 Airbnb Clone Backend  
+# 🏠 **Airbnb Clone Backend**
 
-## 📖 Overview  
+## 📖 Overview
 
 The **Airbnb Clone Backend** provides a **robust and scalable foundation** to power core features of Airbnb, including:  
 
@@ -130,3 +130,35 @@ The backend uses a relational database (PostgreSQL) to manage key entities and t
 
 - A payment **belongs to one booking** 📅  
 - Each booking can have **one or multiple payments** 💳  
+
+## ✨ Feature Breakdown  
+
+### 👥 User Management
+
+Handles **user registration, authentication, and profile management**.  
+This feature ensures that users can securely log in, manage their personal information, and access the platform according to their role (guest or host).  
+
+### 🏡 Property Management
+
+Allows users (hosts) to **create, update, retrieve, and delete property listings**.  
+It ensures that all property details are accurately maintained and searchable by potential guests.  
+
+### 📅 Booking System
+
+Enables users to **reserve properties and manage their booking details**.  
+This feature handles check-in/check-out dates, availability, and links bookings to both users and properties.  
+
+### 💳 Payment Processing
+
+Processes **secure transactions for bookings**.  
+It records payment details, updates booking status, and ensures financial data integrity between users and hosts.  
+
+### ⭐ Review System
+
+Lets users **leave ratings and reviews for properties**.  
+This builds trust within the platform, helps guests make informed decisions, and provides feedback to hosts.  
+
+### ⚡ Data Optimization
+
+Uses **indexing and caching strategies** to improve data retrieval and overall system performance.  
+It ensures the backend can efficiently handle high-traffic scenarios and deliver a smooth user experience.  
