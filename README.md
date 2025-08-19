@@ -41,3 +41,92 @@ This project uses a modern stack to ensure scalability, performance, and reliabi
 - ⚡ **Redis** – Used for caching and session management to improve performance and reduce database load.  
 - 🐳 **Docker** – Provides containerization for consistent development and deployment environments.  
 - 🤖 **GitHub Actions (CI/CD)** – Automates testing and deployment pipelines to ensure smooth integration and delivery.  
+
+## 🗄️ Database Design  
+
+The backend uses a relational database (PostgreSQL) to manage key entities and their relationships:  
+
+### 👤 Users
+
+**Key Fields:**
+
+- `id` – Unique user identifier  
+- `name` – Full name of the user  
+- `email` – Unique email for login and communication  
+- `password` – Hashed password for authentication  
+- `role` – User role (e.g., guest, host)  
+
+**Relationships:**
+
+- A user can **own multiple properties** 🏡  
+- A user can **make multiple bookings** 📅  
+- A user can **write multiple reviews** ⭐  
+
+---
+
+### 🏡 Properties
+
+**Key Fields:**
+
+- `id` – Unique property identifier  
+- `title` – Property title or name  
+- `description` – Details about the property  
+- `price_per_night` – Cost per night stay  
+- `owner_id` – References the user who owns the property  
+
+**Relationships:**
+
+- Each property **belongs to one user** 👤  
+- Each property can have **multiple bookings** 📅  
+- Each property can have **multiple reviews** ⭐  
+
+---
+
+### 📅 Bookings
+
+**Key Fields:**  
+
+- `id` – Unique booking identifier  
+- `property_id` – The property being booked  
+- `user_id` – The user making the booking  
+- `check_in` – Check-in date  
+- `check_out` – Check-out date  
+
+**Relationships:**  
+
+- A booking **belongs to one property** 🏡  
+- A booking **belongs to one user** 👤  
+
+---
+
+### ⭐ Reviews  
+
+**Key Fields:**  
+
+- `id` – Unique review identifier  
+- `property_id` – The property being reviewed  
+- `user_id` – The user who wrote the review  
+- `rating` – Numerical rating (e.g., 1–5)  
+- `comment` – Review text  
+
+**Relationships:**  
+
+- A review **belongs to one property** 🏡  
+- A review **belongs to one user** 👤  
+
+---
+
+### 💳 Payments
+
+**Key Fields:**  
+
+- `id` – Unique payment identifier  
+- `booking_id` – Associated booking  
+- `amount` – Total amount paid  
+- `payment_method` – e.g., Credit Card, PayPal  
+- `status` – Payment status (completed, pending, failed)  
+
+**Relationships:**
+
+- A payment **belongs to one booking** 📅  
+- Each booking can have **one or multiple payments** 💳  
